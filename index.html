@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chatbook</title>
+    <script defer src="http://localhost:8001/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navlist">
+            <li><img class="logo" src="photuu.png" alt=""></li>
+            <li>ChatVerse</li>
+        </ul>
+        <div class="navlist-right">
+            <img id="modelogo" src="sun.png" alt="">
+        </div>
+    </nav>
+    <div class="container"></div> 
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name="messageInp" id="messageInp">
+            <button class="btn" type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+        var icon=document.querySelector("#modelogo");
+        icon.addEventListener("click",()=>{
+            document.body.classList.toggle("darkmode");
+            if(document.body.classList.contains("darkmode")){
+                icon.src="sun.png";
+            }else{
+                icon.src="moon.png";
+            }
+        });
+        
+    </script>
+
+</body>
+</html>

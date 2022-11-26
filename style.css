@@ -1,0 +1,124 @@
+body{
+    margin:0px;
+    height: 100vh;
+    background:var(--primary-bg-color);
+    color:var(--color);
+}
+.navbar{
+    display:flex;
+    background-color:var(--primary-color);
+    height:60px;
+}
+.pfcolor{
+    color:red;
+}
+.navlist{
+    display:flex;
+    width:50%;
+    align-items: center;
+}
+.navlist li{
+    list-style:none;
+    padding:0px 10px;
+    font-size:30px;
+}
+
+.navlist-right{
+    display:flex;
+    margin-left:40%
+}
+#modelogo{
+    height:40px;
+    margin:auto;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.container{
+    max-width: 955px;
+    border: 2px solid black;
+    border-radius: 13px;
+    margin:auto;
+    margin-top:50px;
+    height: 60vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background:var(--primary-container-img);
+}
+
+:root{
+    --primary-color:#66c8c6;
+    --primary-left-color:white;
+    --primary-right-color:#97f399;
+    --primary-bg-color:#a1a0a0;
+    --primary-container-img:url("https://wallpapercave.com/wp/wp5149772.jpg");
+    --color:black;
+}
+
+.darkmode{
+    --primary-color:#663d3d;
+    --primary-left-color:#1c1919;
+    --primary-right-color:#335734;
+    --primary-container-img:url("https://cdn.wallpapersafari.com/67/84/AIq2b8.jpg");
+    --primary-bg-color:#454343;
+    --color:white;
+}
+.message{
+    width: 24%;
+    padding: 10px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.message p{
+    margin:0px;
+}
+.left{
+    background-color:var(--primary-left-color);
+    float: left;
+    clear:both;
+}
+
+.right{
+    background-color:var(--primary-right-color);
+    float: right;
+    clear:both;
+}
+
+#send-container{
+    display:block;
+    margin: auto;
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#messageInp{
+    width: 80%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    font-size: 22px;
+    background:var(--primary-left-color);
+    color:var(--color);
+}
+
+.btn{
+    margin: 0 5px;
+    width: 9%;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    background-color:var(--primary-color);
+    color:var(--color);
+}
+
